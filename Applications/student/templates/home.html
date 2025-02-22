@@ -1,0 +1,222 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+{% comment %} <!DOCTYPE html> {% endcomment %}
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+{% comment %} <html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <style>
+            /* Remove the navbar's default margin-bottom and rounded borders */ 
+            .navbar {
+              margin-bottom: 0;
+              border-radius: 0;
+            }
+            
+            /* Add a gray background color and some padding to the footer */
+            footer {
+              background-color: #f2f2f2;
+              padding: 25px;
+            }
+
+            .button {
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+              }
+              
+              .button1 {background-color: #04AA6D;} /* Green */
+              .button2 {background-color: #008CBA;} 
+
+              ul {
+                list-style: none;
+              }
+              
+              ul li:before {
+                content: '✓';
+              }
+          </style>
+          <!-- end of style -->
+
+    </head>
+    <body>
+        this is home page
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="#">Portfolio</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Gallery</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
+          <div class="jumbotron">
+            <div class="container text-center">
+              <h1>Welcome To Student Management System</h1>      
+              <p>Take your legal expertise to new heights with top-ranked LL.M. Programs offered by India’s #1 Private Law School (QS Rankings 2024) - JGLS and foreign universities. Acquire essential skills, explore insights, & advance your legal career with our LL.M. courses offered by some of the top universities in the world.</p>
+              <ul>
+                <li>this is my text</li>
+                <li>this is my text</li>
+                <li>this is my text</li>
+                <li>this is my text</li>
+                <li>this is my text</li>
+              </ul>
+              <button class="button button1">Sign Up</button>
+              <button class="button button2">Login</button>
+            </div>
+          </div>
+            
+          <div class="container-fluid bg-3 text-center">    
+            <h3>Some of my Work</h3><br>
+            <div class="row">
+              <div class="col-sm-3">
+                <p>Some text..</p>
+                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+              </div>
+              <div class="col-sm-3"> 
+                <p>Some text..</p>
+                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+              </div>
+              <div class="col-sm-3"> 
+                <p>Some text..</p>
+                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+              </div>
+              <div class="col-sm-3">
+                <p>Some text..</p>
+                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+              </div>
+            </div>
+          </div><br>
+          
+          <div class="container-fluid bg-3 text-center">    
+            <div class="row">
+              <div class="col-sm-3">
+                <p>Some text..</p>
+                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+              </div>
+              <div class="col-sm-3"> 
+                <p>Some text..</p>
+                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+              </div>
+              <div class="col-sm-3"> 
+                <p>Some text..</p>
+                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+              </div>
+              <div class="col-sm-3">
+                <p>Some text..</p>
+                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+              </div>
+            </div>
+          </div><br><br>
+          
+          <footer class="container-fluid text-center">
+            <p>Footer Text</p>
+          </footer>
+        
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+    </body>
+</html> {% endcomment %}
+{% comment %} 
+<div style ="margin-top:200px;"></div>
+<h1 class= "text-center">Welcome to Student Management System</h1> {% endcomment%}
+
+<section class="py-5 bg-light">
+	<div class="container">
+		<div class="row justify-content-center align-items-center">
+			<div class="col-lg-6 mb-5 mb-lg-0">
+				<div class="pe-lg-3">
+					<h1 style="color:Tomato; class="display-3 fw-bold mb-2 mb-md-3">Welcome To Student Management <span class="text-primary">System</span></h1>
+					<p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat erat quis pulvinar consectetur adipiscing elit semper.</p>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 mb-3 mb-sm-0">
+						<div class="d-flex">
+							<div class="flex-shrink-0">
+								<div class="text-primary">
+									<svg class="bi bi-chat-right-fill" fill="currentColor" height="32" viewbox="0 0 16 16" width="32" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14 0a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"></path></svg>
+								</div>
+							</div>
+							<div class="ms-3">
+								<h6 class="mb-0">24/7</h6>
+								<p>Customer Support</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="d-flex">
+							<div class="text-primary">
+								<svg class="bi bi-shield-fill-check" fill="currentColor" height="32" viewbox="0 0 16 16" width="32" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647z" fill-rule="evenodd"></path></svg>
+							</div>
+							<div class="ms-3">
+								<h6 class="mb-0">99.99%</h6>
+								<p>Uptime Guarantee</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="ps-lg-5">
+				<!--	<div class="card shadow-lg border border-primary text-white text-left h-100">
+						<div class="card-body bg-primary p-4 p-xl-5">
+							<h2 class="pb-3 text-center">Take Web Design to the Next Level - Start Today!</h2>
+							<form>
+								<div class="mb-3">
+									<label class="form-label" for="name">Full Name</label> <input class="form-control" id="name" type="text">
+								</div>
+								<div class="mb-3">
+									<label class="form-label" for="email">Email Address</label> <input class="form-control" id="email" type="email">
+								</div>
+								<div class="mb-3">
+									<label class="form-label" for="phone">Phone Number</label> <input class="form-control" id="phone" type="number">
+								</div><button class="btn btn-dark btn-lg" type="submit">Get Started</button>
+								<p class="mt-3 small fst-italic text-light">*Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</form>
+						</div>
+					</div>
+-->			</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock content %}

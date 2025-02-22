@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Submission</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        table {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <h2 style="text-align: center;">Student Details</h2>
+
+        <table>
+            <tr>
+                <th>Student Name</th>
+                <th>Student Mobile</th>
+            </tr>
+            {% for d in data %}
+            <tr>
+                <td>{{ d.stu_name }}</td>
+                <td>{{ d.stu_mobile }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% comment %} <h2>Student Details</h2> {% endcomment %}
+    <form method="post">
+        <!-- {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button> -->
+    </form>
+    <div>
+        <!--<ul>
+            {% for d in data %}
+            <li>
+                <br>
+                {{d.stu_name}}
+                {{d.stu_mobile}}
+            </li>
+            {% endfor %}
+        </ul> -->
+        {% comment %} <table border="1">
+            <tr>
+                <th>Student Name</th>
+                <th>Student Mobile</th> {% endcomment %}
+            {% comment %} </tr>
+            {% for d in data %}
+            <tr>
+                <td>{{ d.stu_name }}</td>
+                <td>{{ d.stu_mobile }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>         {% endcomment %}
+    <!-- {% if submitted_data %}
+        <h3>Submitted Data:</h3>
+        <ul>
+            <li><strong>Student Name:</strong> {{ submitted_data.stu_name }}</li>
+            <li><strong>Student Email:</strong> {{ submitted_data.stu_mobile }}</li>
+            <li><strong>Student Id:</strong> {{ submitted_data.stu_id }}</li>
+        </ul>
+    {% endif %} -->
+</body>
+</html>
+{% endblock content %}
